@@ -9,6 +9,6 @@
   },
   "dependencies": {
     "@astrojs/starlight": "0.32.0",
-    "astro": "5.1.1"
+    "astro": "5.1.5"
   }
 }
