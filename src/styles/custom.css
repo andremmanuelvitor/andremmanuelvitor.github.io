@@ -1,0 +1,100 @@
+/* ── Typography & base ─────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+  --sl-font: 'IBM Plex Sans', system-ui, sans-serif;
+  --sl-font-mono: 'IBM Plex Mono', monospace;
+}
+
+/* ── Color theme — cool slate + electric teal accent ────── */
+:root[data-theme='light'] {
+  --sl-color-accent-low:    #d0f4f1;
+  --sl-color-accent:        #0d9488;
+  --sl-color-accent-high:   #0f766e;
+
+  --sl-color-bg:            #f8fafc;
+  --sl-color-bg-nav:        #f1f5f9;
+  --sl-color-bg-sidebar:    #f1f5f9;
+  --sl-color-hairline:      #e2e8f0;
+  --sl-color-gray-1:        #0f172a;
+  --sl-color-gray-2:        #334155;
+  --sl-color-gray-3:        #64748b;
+  --sl-color-gray-4:        #94a3b8;
+  --sl-color-gray-5:        #cbd5e1;
+  --sl-color-gray-6:        #e2e8f0;
+  --sl-color-white:         #f8fafc;
+}
+
+:root[data-theme='dark'] {
+  --sl-color-accent-low:    #042f2e;
+  --sl-color-accent:        #2dd4bf;
+  --sl-color-accent-high:   #5eead4;
+
+  --sl-color-bg:            #09090b;
+  --sl-color-bg-nav:        #111113;
+  --sl-color-bg-sidebar:    #111113;
+  --sl-color-hairline:      #27272a;
+  --sl-color-gray-1:        #fafafa;
+  --sl-color-gray-2:        #e4e4e7;
+  --sl-color-gray-3:        #a1a1aa;
+  --sl-color-gray-4:        #71717a;
+  --sl-color-gray-5:        #3f3f46;
+  --sl-color-gray-6:        #27272a;
+  --sl-color-white:         #09090b;
+}
+
+/* ── Sidebar — tighter, monospaced labels ───────────────── */
+.sidebar-content {
+  font-family: var(--sl-font-mono);
+  font-size: 0.8rem;
+}
+
+/* ── Content — better reading width & spacing ───────────── */
+.sl-markdown-content {
+  font-size: 1rem;
+  line-height: 1.75;
+  max-width: 68ch;
+}
+
+.sl-markdown-content h1,
+.sl-markdown-content h2,
+.sl-markdown-content h3 {
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.sl-markdown-content h2 {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--sl-color-hairline);
+}
+
+/* ── Code blocks ─────────────────────────────────────────── */
+.sl-markdown-content pre {
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 6px;
+}
+
+.sl-markdown-content code:not(pre code) {
+  background: var(--sl-color-accent-low);
+  color: var(--sl-color-accent-high);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  font-size: 0.88em;
+}
+
+/* ── Week badge (used in frontmatter hero) ───────────────── */
+.week-badge {
+  display: inline-block;
+  font-family: var(--sl-font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sl-color-accent-high);
+  background: var(--sl-color-accent-low);
+  padding: 0.25em 0.6em;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
+}
