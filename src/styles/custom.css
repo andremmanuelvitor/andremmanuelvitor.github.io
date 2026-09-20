@@ -100,10 +100,14 @@
 }
 
 /* ── Card title color fix ───────────────────────────────── */
-:root[data-theme='light'] .sl-card .sl-card-title {
-  color: #0f172a;
+:root[data-theme='light'] .sl-card p:first-child strong,
+:root[data-theme='light'] .sl-card .card-title,
+:root[data-theme='light'] .sl-card > p:first-of-type {
+  color: #0f172a !important;
 }
 
-:root[data-theme='dark'] .sl-card .sl-card-title {
-  color: #fafafa;
+:root[data-theme='dark'] .sl-card p:first-child strong,
+:root[data-theme='dark'] .sl-card .card-title,
+:root[data-theme='dark'] .sl-card > p:first-of-type {
+  color: #fafafa !important;
 }
