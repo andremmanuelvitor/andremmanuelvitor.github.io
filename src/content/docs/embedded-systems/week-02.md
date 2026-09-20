@@ -1,6 +1,7 @@
 ---
 title: "Week 02 — GPIO, timers, and interrupts"
 description: Configuring GPIO pins as inputs and outputs, using hardware timers for precise timing, and handling asynchronous events with interrupts.
+lastUpdated: 2026-09-17
 ---
 
 <div class="week-badge">Week 02 · Embedded Systems</div>

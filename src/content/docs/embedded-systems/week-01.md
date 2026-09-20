@@ -1,6 +1,7 @@
 ---
 title: "Week 01 — Introduction & microcontroller architecture"
 description: What embedded systems are, how a microcontroller is organized internally, and why the Harvard architecture matters for real-time constraints.
+lastUpdated: 2026-09-16
 ---
 
 <div class="week-badge">Week 01 · Embedded Systems</div>
