@@ -1,0 +1,44 @@
+---
+title: Embedded Systems
+description: Course overview — topics, textbooks, and weekly index.
+---
+
+import { Card, LinkCard } from '@astrojs/starlight/components';
+
+**Embedded Systems** is a system that combines computation with physical processes — where software and hardware interact with the physical world through sensors and actuators.
+
+There is the concept of **Cyber-physical systems**, defined by Lee and Seshia as "an integration of computation with physical processes whose behavior is defined by both cyber and physical parts of the system.". This concept is a good way to understand the Embedded Systems. 
+
+## Primary textbook
+
+<Card icon="open-book" title="Introduction to Embedded Systems — A Cyber-Physical Systems Approach">
+  E. A. Lee and S. A. Seshia  
+  *MIT Press, Second Edition, 2017*
+
+  The course follows this book closely. Lee and Seshia frame embedded systems as **cyber-physical systems** — where computation is tightly coupled with physical processes, and where timing and concurrency are correctness criteria, not just performance concerns.
+
+  <LinkCard
+    title="Free PDF available at leeseshia.org"
+    href="http://leeseshia.org"
+    target="_blank"
+  />
+</Card>
+
+## Course map
+
+| Week | Topic | Status |
+|------|-------|--------|
+| 01 | Introduction & microcontroller architecture | ✓ |
+| 02 | GPIO, timers, and interrupts | ✓ |
+| 03 | Serial communication — UART, SPI, I²C | ✓ |
+| 04 | Memory-mapped I/O and DMA | ✓ |
+| 05 | *(coming next week)* | — |
+
+## Other reference books
+
+## Tools used in this course
+
+- **Toolchain**: GCC arm-none-eabi
+- **IDE**: VS Code + Cortex-Debug extension
+- **Hardware**: STM32F4 Discovery board
+- **RTOS**: FreeRTOS (introduced in week 08)
