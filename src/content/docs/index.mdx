@@ -1,12 +1,12 @@
 ---
 title: Grad Notes
-description: Master's degree study notes.
+description: Engineering notes, experiments, and systems.
 template: splash
 hero:
   title: Grad Notes
-  tagline: Master's degree study notes — embedded systems, computer architecture, and more.
+  tagline: Engineering notes, experiments & systems.
   actions:
-    - text: Embedded Systems
+    - text: Explore notes
       link: /embedded-systems/
       icon: right-arrow
       variant: primary
@@ -14,3 +14,37 @@ hero:
       link: /getting-started/about/
       icon: right-arrow
 ---
+
+import LatestNotes from '../../components/LatestNotes.astro';
+
+<div class="home-intro">
+  <p>Embedded systems · Computer architecture<br />Cybersecurity · Systems engineering</p>
+</div>
+
+<section class="home-section" aria-labelledby="explore-heading">
+  <h2 id="explore-heading">Explore</h2>
+  <div class="home-topic-list">
+    <a href="/embedded-systems/">Embedded</a>
+    <span>Architecture</span>
+    <span>Security</span>
+    <span>Systems</span>
+  </div>
+</section>
+
+<section class="home-section" aria-labelledby="latest-heading">
+  <h2 id="latest-heading">Latest notes</h2>
+  <LatestNotes />
+</section>
+
+<section class="home-section home-research" aria-labelledby="research-heading">
+  <h2 id="research-heading">Current research</h2>
+  <p>Cyber-physical system implementation through Embedded System</p>
+  <small>Marster's Student · OHIO University</small>
+</section>
+
+<section class="home-section home-about" aria-labelledby="about-heading">
+  <h2 id="about-heading">About</h2>
+  <p>Andre Emmanuel Vitor</p>
+  <p>Control &amp; Automation Engineer</p>
+  <small>Avionics · Control Systems · MBE · DO-178</small>
+</section>

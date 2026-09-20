@@ -98,3 +98,118 @@
   border-radius: 3px;
   margin-bottom: 0.75rem;
 }
+
+/* ── Homepage ───────────────────────────────────────────── */
+.sl-markdown-content .home-intro {
+  margin: 0 auto 3rem;
+  max-width: 38rem;
+}
+
+.home-intro p {
+  color: var(--sl-color-gray-2);
+  font-family: var(--sl-font-mono);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.sl-markdown-content .home-section {
+  border-top: 1px solid var(--sl-color-hairline);
+  margin: 0 auto;
+  max-width: 56rem;
+  padding: 2rem 0;
+}
+
+.home-section h2 {
+  border: 0;
+  font-family: var(--sl-font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.home-topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.home-topic-list a,
+.home-topic-list span {
+  border: 1px solid var(--sl-color-hairline);
+  color: var(--sl-color-gray-2);
+  font-family: var(--sl-font-mono);
+  font-size: 0.85rem;
+  padding: 0.55rem 0.8rem;
+}
+
+.home-topic-list a:hover {
+  border-color: var(--sl-color-accent);
+  color: var(--sl-color-accent-high);
+}
+
+.home-note-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.home-note-list li {
+  align-items: center;
+  border-bottom: 1px solid var(--sl-color-hairline);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.9rem 0;
+}
+
+.home-note-list li:first-child {
+  border-top: 1px solid var(--sl-color-hairline);
+}
+
+.home-note-list a {
+  align-items: center;
+  color: var(--sl-color-gray-1);
+  display: flex;
+  gap: 1.25rem;
+  text-decoration: none;
+}
+
+.home-note-list a:hover {
+  color: var(--sl-color-accent-high);
+}
+
+.home-note-list a span {
+  color: var(--sl-color-gray-3);
+  font-family: var(--sl-font-mono);
+  font-size: 0.75rem;
+}
+
+.home-note-list li > span {
+  color: var(--sl-color-gray-3);
+}
+
+.home-research p,
+.home-about p {
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+}
+
+.home-section small {
+  color: var(--sl-color-gray-3);
+  font-family: var(--sl-font-mono);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 40rem) {
+  .home-note-list a {
+    gap: 0.75rem;
+  }
+
+  .home-note-list li {
+    align-items: flex-start;
+  }
+}

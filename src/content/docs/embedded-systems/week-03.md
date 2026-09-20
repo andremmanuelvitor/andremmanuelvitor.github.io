@@ -1,6 +1,7 @@
 ---
 title: "Week 03 — Serial communication: UART, SPI, I²C"
 description: The three most common serial protocols in embedded systems — how each works, when to choose which, and how to configure them on STM32.
+lastUpdated: 2026-09-18
 ---
 
 <div class="week-badge">Week 03 · Embedded Systems</div>

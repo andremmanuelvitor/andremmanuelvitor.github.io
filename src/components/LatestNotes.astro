@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+
+const notes = (await getCollection('docs'))
+  .filter(({ id }) => id.startsWith('embedded-systems/week-'))
+  .sort((a, b) => {
+    const dateDifference =
+      (b.data.lastUpdated instanceof Date ? b.data.lastUpdated.getTime() : 0) -
+      (a.data.lastUpdated instanceof Date ? a.data.lastUpdated.getTime() : 0);
+
+    return dateDifference || b.id.localeCompare(a.id, undefined, { numeric: true });
+  })
+  .slice(0, 3);
+---
+
+<ol class="home-note-list">
+  {notes.map((note, index) => (
+    <li>
+      <a href={`/${note.slug}/`}>
+        <span>{String(index + 1).padStart(2, '0')}</span>
+        {note.data.title}
+      </a>
+      <span aria-hidden="true">→</span>
+    </li>
+  ))}
+</ol>
