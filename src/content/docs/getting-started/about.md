@@ -1,15 +1,16 @@
 ---
-title: About this site
+title: About me
 description: What Grad Notes is, who writes it, and why it exists.
 ---
 
-**Grad Notes** is a public notebook for my master's degree in Computer Engineering.
+**Grad Notes** is a public space where I write about things I'm studying. 
 
-Each course gets its own section. Each week of a course gets its own page. I write these notes after class to consolidate what I learned — not as a substitute for the lectures, but as a way to build a reference I can actually use later.
+Each subject gets its own section. Each week of a course gets its own page. I write these notes to consolidate what I learned, as a way to build a reference I can actually use later or help someone.
 
-## What you'll find here
+## What you'll find here (being updated)
 
-- **Embedded Systems** — microcontroller architecture, real-time constraints, peripheral interfaces, RTOS fundamentals.
+- **Embedded Systems** — Introduction to Embedded Systems, Modeling Dynamics (Continuous, Discrete, and Hybrid), State Machines, Sensors and Actuators, Memory Architecture, Input and Output, Multitasking and Scheduling.
+- More topics added each week.
 - More courses added each semester.
 
 ## How to navigate
@@ -18,4 +19,4 @@ Use the sidebar on the left to browse by course and week. The search bar at the 
 
 ## A note on accuracy
 
-These are student notes. They reflect my understanding at the time of writing, which may be incomplete or occasionally wrong. If you spot an error, feel free to open an issue on [GitHub](https://github.com/YOUR-USERNAME/grad-notes).
+These are my thoughts on the topics. They reflect my understanding at the time of writing, if you spot an error, feel free to contact me on [GitHub](https://github.com/andremmanuelvitor).

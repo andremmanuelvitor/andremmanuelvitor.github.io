@@ -21,7 +21,7 @@ export default defineConfig({
         {
           label: 'Start here',
           items: [
-            { label: 'About this site', link: 'getting-started/about' },
+            { label: 'About me', link: 'getting-started/about' },
             { label: 'How I take notes', link: 'getting-started/how-i-take-notes' },
           ],
         },
