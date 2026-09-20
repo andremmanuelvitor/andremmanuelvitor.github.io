@@ -98,3 +98,12 @@
   border-radius: 3px;
   margin-bottom: 0.75rem;
 }
+
+/* ── Card title color fix ───────────────────────────────── */
+:root[data-theme='light'] .sl-card .sl-card-title {
+  color: #0f172a;
+}
+
+:root[data-theme='dark'] .sl-card .sl-card-title {
+  color: #fafafa;
+}
