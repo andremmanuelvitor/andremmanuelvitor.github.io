@@ -22,7 +22,7 @@
   --sl-color-gray-4:        #94a3b8;
   --sl-color-gray-5:        #cbd5e1;
   --sl-color-gray-6:        #e2e8f0;
-  --sl-color-white:         #f8fafc;
+  --sl-color-white:         #030303;
 }
 
 :root[data-theme='dark'] {
@@ -40,7 +40,7 @@
   --sl-color-gray-4:        #71717a;
   --sl-color-gray-5:        #3f3f46;
   --sl-color-gray-6:        #27272a;
-  --sl-color-white:         #09090b;
+  --sl-color-white:         #fcfcfc;
 }
 
 /* ── Sidebar — tighter, monospaced labels ───────────────── */
@@ -97,17 +97,4 @@
   padding: 0.25em 0.6em;
   border-radius: 3px;
   margin-bottom: 0.75rem;
-}
-
-/* ── Card title color fix ───────────────────────────────── */
-:root[data-theme='light'] .sl-card p:first-child strong,
-:root[data-theme='light'] .sl-card .card-title,
-:root[data-theme='light'] .sl-card > p:first-of-type {
-  color: #0f172a !important;
-}
-
-:root[data-theme='dark'] .sl-card p:first-child strong,
-:root[data-theme='dark'] .sl-card .card-title,
-:root[data-theme='dark'] .sl-card > p:first-of-type {
-  color: #fafafa !important;
 }
